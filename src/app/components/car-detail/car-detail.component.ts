@@ -13,11 +13,11 @@ export class CarDetailComponent implements OnInit {
   constructor(private carService:CarService) { }
 
   ngOnInit(): void {
-    this.getCars();
+    this.getCarsDetail();
   }
 
-  getCars(){
-    this.carService.getCars().subscribe((response) => {
+  getCarsDetail(){
+    this.carService.getCarsDetail().subscribe((response) => {
       this.Cars = response.data;
     })
   }
