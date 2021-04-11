@@ -1,5 +1,5 @@
 <ul class="list-group">
-    <li routerLink="/cars" [class]="getAllColorClass()">All Cars</li>
+    <li routerLink="/cars" [class]="getAllColorClass()">Colors</li>
     <li
       (click)="setCurrentColor(color)"
       routerLink="/cars/color/{{ color.id }}"
