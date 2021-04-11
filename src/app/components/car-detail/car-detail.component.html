@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Araç İsmi</th>
+            <th scope="col">Renk</th>
+            <th scope="col">Günlük Ücret</th>
+            <th scope="col">Açıklama</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of Cars">
+            <td>{{car.brandName}}</td>
+            <td>{{car.colorName}}</td>
+            <td>{{car.dailyPrice}}</td>
+            <td>{{car.description}}</td>
+        </tr>
+    </tbody>
+</table>
